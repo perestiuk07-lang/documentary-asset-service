@@ -24,7 +24,7 @@ def download_video(request: DownloadRequest):
     output_template = os.path.join(temp_dir, "video.%(ext)s")
 
     options = {
-        "format": "best[ext=mp4]/best",
+        "format": "best",
         "outtmpl": output_template,
         "noplaylist": True,
     }
